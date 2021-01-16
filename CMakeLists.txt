@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(demoinfo VERSION 1.0)
+project(demoinfo VERSION 1.1)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_library(project_warnings INTERFACE)
