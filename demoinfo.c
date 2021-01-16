@@ -114,6 +114,11 @@ int main(int argc, char *argv[])
 
   FILE *const file = fopen(argv[1], "r");
 
+  if (!file) {
+    perror("Could not open file");
+    return EXIT_FAILURE;
+  }
+
   struct demo_header demo_header;
 
   demo_header.header = read_string(file, HEADER_LEN);
