@@ -52,9 +52,7 @@ int main(int argc, char *argv[])
     return EXIT_FAILURE;
   }
 
-  struct demo_header demo_header;
-
-  read_demo_header(file);
+  struct demo_header demo_header = read_demo_header(file);
 
   fclose(file);
 
